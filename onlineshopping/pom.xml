@@ -14,7 +14,13 @@
 	</properties>
 
 	<dependencies>
-
+<!-- Linking backend project  -->
+		<dependency>
+			<groupId>net.dev</groupId>
+			<artifactId>shoppingbackend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		
 		<!-- JUNIT -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -37,7 +43,7 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-		
+
 		<!-- jstl -->
 		<dependency>
 			<groupId>jstl</groupId>

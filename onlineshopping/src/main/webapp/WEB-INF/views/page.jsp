@@ -44,22 +44,30 @@
 		<!-- Page Content -->
 		<div class="content">
 
-			<!-- Loading the home content  -->
+			<!-- Load only when use clicks home   -->
 			<c:if test="${userclickHome == true}">
 				<%@include file="home.jsp"%>
 			</c:if>
 
+			<!-- Load only when use clicks about  -->
 			<c:if test="${userclickAbout == true}">
 				<%@include file="about.jsp"%>
 			</c:if>
 
+			<!--  Load only when use clicks content   -->
 			<c:if test="${userclickContact == true}">
 				<%@include file="contact.jsp"%>
+			</c:if>
+			
+			<!-- Load only when use clicks content  -->
+			<c:if test="${userclickAllProducts == true or userclickCategoryProducts == true}">
+				<%@include file="listProducts.jsp"%>
 			</c:if>
 
 		</div>
 		<!-- Footer -->
 		<%@include file="./shared/footer.jsp"%>
+		
 		<!-- Bootstrap core JavaScript -->
 		<script src="${js }/jquery.min.js"></script>
 		<script src="${js }/popper.min.js"></script>
